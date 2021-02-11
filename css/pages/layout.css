@@ -121,6 +121,10 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.sb-topnav-bg {
+    background-color: #343a40 !important;
+}
+
 .sb-sidenav {
     display: flex;
     flex-direction: column;
@@ -155,7 +159,7 @@ body {
     margin-left: auto;
     transition: transform 0.15s ease;
 }
-.sb-sidenav .sb-sidenav-menu .nav .nav-link.collapsed .sb-sidenav-collapse-arrow {
+.sb-sidenav .sb-sidenav-menu .nav .nav-link[aria-expanded="false"] .sb-sidenav-collapse-arrow {
     transform: rotate(-90deg);
 }
 .sb-sidenav .sb-sidenav-menu .nav .sb-sidenav-menu-nested {
@@ -204,9 +208,14 @@ body {
     margin-top: 10px;
     min-width: 230px;
     max-width: 90vw;
+    background-color: #343a40;
 }
 .user-dropdown .dropdown-item {
     color: #a3aab0;
+}
+.user-dropdown .dropdown-item:hover {
+    color: #a3aab0;
+    background-color: #3d4349;
 }
 
 .main-breadcrumb {
